@@ -2,7 +2,8 @@ import React from "react";
 import GlobalStyle from "./theme/globalStyle";
 import { theme } from "./theme/mineTheme";
 import { ThemeProvider } from "styled-components";
-import Header from "./components/organisms/header/header";
+import Header from "./components/Views/header/header";
+import AftertHeader from "./components/organisms/AfterHeader/AfterHeader";
 
 function Root() {
   return (
@@ -10,6 +11,7 @@ function Root() {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Header />
+        <AftertHeader />
       </ThemeProvider>
     </>
   );
