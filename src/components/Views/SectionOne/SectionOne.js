@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import H2 from "../../atoms/Heading/headingH2";
+import AddImage from "../../atoms/ImageHendling/AddImage";
+import BackgroundSectionOne from "../../../assets/background/section1Background.png";
 
 const Wrapper = styled.section`
   display: flex;
@@ -20,6 +22,7 @@ const SectionOne = () => (
         your text
       </H2>
     </WrapperText>
+    <AddImage icons={BackgroundSectionOne} width="100%" height="450px" />
   </Wrapper>
 );
 
