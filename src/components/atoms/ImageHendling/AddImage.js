@@ -6,6 +6,7 @@ const AdderImage = styled.div`
   background-position: 50% 50%;
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+  margin: ${({ margin }) => margin};
 `;
 
 export default AdderImage;

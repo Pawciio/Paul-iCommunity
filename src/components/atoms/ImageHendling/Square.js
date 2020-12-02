@@ -12,6 +12,7 @@ const SquareBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  top: -3px;
 `;
 
 const Number = styled.p`
