@@ -8,7 +8,7 @@ import ShareIcon from "../ShareIcon/ShareIcon";
 
 const BackgroundBox = styled.div`
   width: 100%;
-  height: 550px;
+  height: 635px;
   background-image: url(${headerBackground});
   background-position: center;
   background-repeat: no-repeat;
