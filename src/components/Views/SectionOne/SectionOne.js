@@ -16,6 +16,33 @@ const Wrapper = styled.section`
     align-items: center;
     margin: 30px;
   }
+
+  @media all and (max-width: 950px) {
+    h2 {
+      font-size: 3em;
+    }
+    p,
+    .ContentTextSectionOne {
+      font-size: 16px;
+      margin: 15px 3px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    h2 {
+      font-size: 1.5em;
+    }
+    p,
+    .ContentTextSectionOne {
+      font-size: 14px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
 `;
 
 const WrapperText = styled.div`
