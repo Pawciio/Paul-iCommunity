@@ -14,7 +14,7 @@ const Wrapper = styled.section`
 const AftertHeader = () => (
   <Wrapper>
     <AdderImage icons={Line} width="4px" height="50px" />
-    <ParagraphHeading className="">What is your Text</ParagraphHeading>
+    <ParagraphHeading OrangeParagraph>What is your Text</ParagraphHeading>
     <BeforeSectionLineWithSquare NumberInSquare="1" />
   </Wrapper>
 );

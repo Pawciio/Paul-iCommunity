@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const ParagraphHeading = styled.p`
   font-size: 20px;
   margin: 2px;
-  color: ${({ theme }) => theme.OrangeColor};
+  color: ${({ theme, OrangeParagraph }) =>
+    OrangeParagraph ? theme.OrangeColor : "black"};
   font-weight: bold;
-  text-transform: uppercase;
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      font-size: 30px;
+    `};
 `;
 
 export default ParagraphHeading;
