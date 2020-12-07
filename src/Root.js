@@ -7,6 +7,7 @@ import AftertHeader from "./components/organisms/AfterHeader/AfterHeader";
 import SectionOne from "./components/Views/SectionOne/SectionOne";
 import BeforeSectionLineWithSquare from "./components/molecules/BeforeSectionLineWithSquare/BeforeSectionLineWithSquare";
 import SectionTwo from "./components/Views/SectionTwo/SectionTwo";
+import SectionThree from "./components/Views/SectionThree/SectionThree";
 
 function Root() {
   return (
@@ -18,6 +19,9 @@ function Root() {
         <SectionOne />
         <BeforeSectionLineWithSquare NumberInSquare="2" />
         <SectionTwo />
+        <BeforeSectionLineWithSquare NumberInSquare="3" />
+        <SectionThree />
+        <BeforeSectionLineWithSquare NumberInSquare="4" />
       </ThemeProvider>
     </>
   );

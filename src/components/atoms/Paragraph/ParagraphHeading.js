@@ -10,7 +10,7 @@ const ParagraphHeading = styled.p`
   ${({ secondary }) =>
     secondary &&
     css`
-      font-size: 30px;
+      font-size: ${({ height }) => (height ? "34px" : "30px")};
     `};
 `;
 

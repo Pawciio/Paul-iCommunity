@@ -18,10 +18,6 @@ const WrapperElementBox = styled.div`
   max-width: 420px;
   margin: 10px;
 
-  .elipseStyled {
-    margin: 25px 0;
-  }
-
   .title {
     position: relative;
     display: flex;
@@ -79,10 +75,10 @@ class ComponentSectionTwo extends React.Component {
         {this.state.ElementsSectionTwo.map((item) => (
           <WrapperElementBox>
             <AddImage
-              className="elipseStyled"
               icons={item.images}
               width="230px"
               height="230px"
+              margin="25px 0"
             />
             <ParagraphHeading title className="title" OrangeParagraph>
               {item.title}
