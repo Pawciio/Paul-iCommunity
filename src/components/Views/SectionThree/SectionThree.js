@@ -15,6 +15,18 @@ const WrapperText = styled.div`
 
   align-items: center;
   flex-direction: column;
+
+  @media all and (max-width: 950px) {
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
 `;
 
 const SectionThree = () => (

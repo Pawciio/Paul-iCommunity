@@ -10,6 +10,20 @@ import ConnectImage from "../../../assets/section3Icon/section3image4.png";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media all and (max-width: 950px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 
 const WrapperElementBox = styled.div`
@@ -27,6 +41,28 @@ const WrapperElementBox = styled.div`
     font-weight: 600;
     font-style: italic;
     font-size: 24px;
+  }
+
+  @media all and (max-width: 950px) {
+    .textContent {
+      font-size: 16px;
+    }
+    .FontSizeClassNumber {
+      font-size: 18px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    .textContent {
+      font-size: 14px;
+    }
+    .FontSizeClassNumber {
+      font-size: 18px;
+    }
+    .SizeImageInMedia {
+      width: 160px;
+      height: 160px;
+    }
   }
 `;
 
@@ -65,13 +101,19 @@ class ComponentSectionThree extends React.Component {
         {this.state.ElementsSectionTwo.map((item) => (
           <WrapperElementBox>
             <AddImage
+              className="SizeImageInMedia"
               icons={item.images}
               width="260px"
               height="260px"
               margin="25px 30px"
             />
             <Paragraph className="textContent">{item.contentUp}</Paragraph>
-            <ParagraphHeading secondary height OrangeParagraph>
+            <ParagraphHeading
+              className="FontSizeClassNumber"
+              secondary
+              height
+              OrangeParagraph
+            >
               {item.number}
             </ParagraphHeading>
             <Paragraph className="textContent">{item.contentBottom}</Paragraph>

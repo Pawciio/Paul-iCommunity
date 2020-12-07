@@ -15,6 +15,7 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     margin: 30px;
+    text-align: center;
   }
 
   @media all and (max-width: 950px) {

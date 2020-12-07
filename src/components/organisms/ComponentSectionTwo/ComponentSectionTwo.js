@@ -9,6 +9,20 @@ import ElipseIconSocialMedia from "../../../assets/section2Icon/Ellipse3.png";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media all and (max-width: 950px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 
 const WrapperElementBox = styled.div`
@@ -44,6 +58,22 @@ const WrapperElementBox = styled.div`
     font-style: italic;
     font-size: 24px;
   }
+
+  @media all and (max-width: 950px) {
+    .textContent {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    .textContent {
+      font-size: 14px;
+    }
+    .SizeImageInMedia {
+      width: 160px;
+      height: 160px;
+    }
+  }
 `;
 
 class ComponentSectionTwo extends React.Component {
@@ -75,6 +105,7 @@ class ComponentSectionTwo extends React.Component {
         {this.state.ElementsSectionTwo.map((item) => (
           <WrapperElementBox>
             <AddImage
+              className="SizeImageInMedia"
               icons={item.images}
               width="230px"
               height="230px"
