@@ -10,7 +10,7 @@ const H2 = styled.h2`
     SectionTitle &&
     css`
       text-transform: uppercase;
-      margin: 5px;
+      margin: 5px 10px;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
       font-size: 8rem;
       color: ${({ subText, theme }) => (subText ? theme.OrangeColor : "black")};

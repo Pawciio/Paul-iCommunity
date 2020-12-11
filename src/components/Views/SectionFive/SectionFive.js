@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import H2 from "../../atoms/Heading/headingH2";
 import FlexBox from "../../atoms/Boxes/FlexBox/FlexBox";
-import ComponentSectionFour from "../../organisms/ComponentSectionFour/ComponentSectionFour";
 
 const Wrapper = styled.section`
   display: flex;
@@ -28,24 +27,31 @@ const WrapperText = styled.div`
   }
 `;
 
-const SectionFour = () => (
+const SectionFive = () => (
   <Wrapper>
     <WrapperText>
       <FlexBox>
+        <H2 SectionTitle>our goal is to </H2>
         <H2 SectionTitle subText>
-          what
+          show
         </H2>
-        <H2 SectionTitle>is the main </H2>
-        <H2 SectionTitle subText>
-          focus
-        </H2>
+        <H2 SectionTitle>people the </H2>
       </FlexBox>
       <FlexBox>
-        <H2 SectionTitle>of our community ?</H2>
+        <H2 SectionTitle>better side of the world</H2>
       </FlexBox>
-      <ComponentSectionFour />
+      <FlexBox>
+        <H2 SectionTitle>through</H2>
+        <H2 SectionTitle subText>
+          unity and help
+        </H2>
+        <H2 SectionTitle>in</H2>
+      </FlexBox>
+      <FlexBox>
+        <H2 SectionTitle>in diffucult situations</H2>
+      </FlexBox>
     </WrapperText>
   </Wrapper>
 );
 
-export default SectionFour;
+export default SectionFive;
