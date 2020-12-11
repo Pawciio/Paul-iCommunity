@@ -5,6 +5,7 @@ const ImportantWord = styled.span`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 `;
 
 export default ImportantWord;
