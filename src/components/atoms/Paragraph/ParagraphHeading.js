@@ -6,6 +6,8 @@ const ParagraphHeading = styled.p`
   color: ${({ theme, OrangeParagraph }) =>
     OrangeParagraph ? theme.OrangeColor : "black"};
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 
   ${({ secondary }) =>
     secondary &&

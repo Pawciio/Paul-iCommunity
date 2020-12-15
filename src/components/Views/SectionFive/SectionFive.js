@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import H2 from "../../atoms/Heading/headingH2";
 import FlexBox from "../../atoms/Boxes/FlexBox/FlexBox";
+import ComponentSectionFive from "../../organisms/ComponentSectionFive/ComponentSectionFive";
 
 const Wrapper = styled.section`
   display: flex;
@@ -50,6 +51,7 @@ const SectionFive = () => (
       <FlexBox>
         <H2 SectionTitle>in diffucult situations</H2>
       </FlexBox>
+      <ComponentSectionFive />
     </WrapperText>
   </Wrapper>
 );

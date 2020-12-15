@@ -10,6 +10,7 @@ import SectionTwo from "./components/Views/SectionTwo/SectionTwo";
 import SectionThree from "./components/Views/SectionThree/SectionThree";
 import SectionFour from "./components/Views/SectionFour/SectionFour";
 import SectionFive from "./components/Views/SectionFive/SectionFive";
+import Footer from "./components/Views/Footer/Footer";
 
 function Root() {
   return (
@@ -27,6 +28,7 @@ function Root() {
         <SectionFour />
         <BeforeSectionLineWithSquare NumberInSquare="5" />
         <SectionFive />
+        <Footer />
       </ThemeProvider>
     </>
   );

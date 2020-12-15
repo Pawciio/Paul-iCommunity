@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import AdderImage from "../../atoms/ImageHendling/AddImage";
+import AddImage from "../../atoms/ImageHendling/AddImage";
 import Line from "../../../assets/beforeSectionIcon/lineLarge.png";
 import SquareIcon from "../../atoms/ImageHendling/Square";
 import movedown from "../../../assets/beforeSectionIcon/movedown.svg";
@@ -15,8 +15,8 @@ const Wrapper = styled.section`
 
 const BeforeSectionLineWithSquare = ({ NumberInSquare }) => (
   <Wrapper>
-    <AdderImage icons={movedown} width="57px" height="57px" margin="15px 0" />
-    <AdderImage icons={Line} width="4px" height="250px" />
+    <AddImage icons={movedown} width="57px" height="57px" margin="15px 0" />
+    <AddImage icons={Line} width="4px" height="250px" />
     <SquareIcon children={NumberInSquare} />
   </Wrapper>
 );
