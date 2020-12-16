@@ -4,6 +4,7 @@ import AddImage from "../../atoms/ImageHendling/AddImage";
 import ParagraphHeading from "../../atoms/Paragraph/ParagraphHeading";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import Line from "../../../assets/beforeSectionIcon/lineLarge.png";
+import Footer from "../../Views/Footer/Footer";
 import Image1 from "../../../assets/section5beforeFooter/footerimage1.png";
 import Image2 from "../../../assets/section5beforeFooter/footerimage2.png";
 import Image3 from "../../../assets/section5beforeFooter/footerimage3.png";
@@ -12,7 +13,7 @@ import Image4 from "../../../assets/section5beforeFooter/footerimage4.png";
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1350px;
 
   @media all and (max-width: 950px) {
     p,
@@ -26,6 +27,11 @@ const Wrapper = styled.div`
     span {
       font-size: 14px;
     }
+  }
+
+  .longLineVertical {
+    position: relative;
+    top: 110px;
   }
 `;
 
@@ -92,7 +98,9 @@ class ComponentSectionFive extends React.Component {
     return (
       <Wrapper>
         {this.state.ElementsSectionFive.map((item) => (
-          <WrapperElementBox>
+          <WrapperElementBox
+            className={item.longLine ? "longLineVertical" : null}
+          >
             <AddImage
               className="lineVertical"
               icons={Line}
@@ -117,6 +125,7 @@ class ComponentSectionFive extends React.Component {
             <Paragraph className="contentText">{item.content}</Paragraph>
           </WrapperElementBox>
         ))}
+        <Footer />
       </Wrapper>
     );
   }

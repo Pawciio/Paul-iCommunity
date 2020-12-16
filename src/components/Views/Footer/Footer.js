@@ -14,7 +14,8 @@ const Wrapper = styled.section`
   justify-content: flex-end;
 
   .footerBackground {
-    position: relative;
+    position: absolute;
+    right: 0;
   }
 
   @media all and (max-width: 950px) {
