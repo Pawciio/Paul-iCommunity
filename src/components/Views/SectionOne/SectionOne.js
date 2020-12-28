@@ -49,6 +49,8 @@ const Wrapper = styled.section`
 const WrapperText = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const WrapperTextContent = styled.div`

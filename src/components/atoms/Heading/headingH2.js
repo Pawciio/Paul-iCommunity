@@ -9,6 +9,7 @@ const H2 = styled.h2`
   ${({ SectionTitle }) =>
     SectionTitle &&
     css`
+      text-align: center;
       text-transform: uppercase;
       margin: 5px 10px;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);

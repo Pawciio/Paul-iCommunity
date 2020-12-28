@@ -7,7 +7,6 @@ import ParagraphHeading from "../../atoms/Paragraph/ParagraphHeading";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import SpanLine from "../../atoms/SpanLine/SpanLine";
 import ImportantWord from "../../atoms/Paragraph/ImportantWord";
-import FlexBox from "../../atoms/Boxes/FlexBox/FlexBox";
 
 const Wrapper = styled.section`
   display: flex;
@@ -86,10 +85,6 @@ const Footer = () => (
           <Paragraph WhiteParagraph className="footerNumberMargin">
             07748 602060
           </Paragraph>
-          <FlexBox>
-            <ImportantWord whiteWord>Your text</ImportantWord>
-            <Paragraph WhiteParagraph>@nonprofit.com</Paragraph>
-          </FlexBox>
         </FooterTextConteiner>
       </WrapperContentStyle>
     </AddImage>

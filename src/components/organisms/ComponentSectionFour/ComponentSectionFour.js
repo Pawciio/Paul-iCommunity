@@ -7,7 +7,24 @@ import Image2 from "../../../assets/section4Icon/section4image2.png";
 import Image3 from "../../../assets/section4Icon/section4image3.png";
 import Image4 from "../../../assets/section4Icon/section4image4.png";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
+  text-align: center;
+  @media all and (max-width: 950px) {
+    p,
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 575px) {
+    p,
+    span {
+      font-size: 14px;
+    }
+  }
+`;
+
+const WrapperBoxes = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,12 +74,6 @@ const WrapperElementBox = styled.div`
     font-weight: bold;
     letter-spacing: 1px;
   }
-
-  @media all and (max-width: 950px) {
-  }
-
-  @media all and (max-width: 575px) {
-  }
 `;
 
 class ComponentSectionFour extends React.Component {
@@ -96,19 +107,21 @@ class ComponentSectionFour extends React.Component {
   render() {
     return (
       <Wrapper>
-        {this.state.ElementsSectionFour.map((item) => (
-          <WrapperElementBox>
-            <AddImage
-              className="Image"
-              icons={item.images}
-              width="310px"
-              height="400px"
-              margin="25px 0"
-              onMouseEnter={this.togglePopup}
-              onMouseLeave={this.togglePopup}
-            />
-          </WrapperElementBox>
-        ))}
+        <WrapperBoxes>
+          {this.state.ElementsSectionFour.map((item) => (
+            <WrapperElementBox>
+              <AddImage
+                className="Image"
+                icons={item.images}
+                width="310px"
+                height="400px"
+                margin="25px 0"
+                onMouseEnter={this.togglePopup}
+                onMouseLeave={this.togglePopup}
+              />
+            </WrapperElementBox>
+          ))}
+        </WrapperBoxes>
         <ImportantWord>
           HELPING PEOPLE IN DIFFICULT LIFE SITUATIONS
         </ImportantWord>
