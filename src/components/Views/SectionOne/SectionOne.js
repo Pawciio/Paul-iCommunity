@@ -5,6 +5,7 @@ import AddImage from "../../atoms/ImageHendling/AddImage";
 import BackgroundSectionOne from "../../../assets/background/section1Background.png";
 import ParagraphHeading from "../../atoms/Paragraph/ParagraphHeading";
 import ImportantWord from "../../atoms/Paragraph/ImportantWord";
+import BeforeSectionLineWithSquare from "../../molecules/BeforeSectionLineWithSquare/BeforeSectionLineWithSquare";
 
 const Wrapper = styled.section`
   display: flex;
@@ -60,7 +61,7 @@ const WrapperTextContent = styled.div`
 `;
 
 const SectionOne = () => (
-  <Wrapper>
+  <Wrapper id="sectionOne" className="constentSection_handlerMenu">
     <WrapperText>
       <H2 SectionTitle>what is</H2>
       <H2 SectionTitle subText>
@@ -78,6 +79,7 @@ const SectionOne = () => (
         <ImportantWord>involved</ImportantWord>
       </WrapperText>
     </WrapperTextContent>
+    <BeforeSectionLineWithSquare NumberInSquare="2" />
   </Wrapper>
 );
 

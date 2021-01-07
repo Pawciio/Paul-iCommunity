@@ -3,6 +3,7 @@ import styled from "styled-components";
 import H2 from "../../atoms/Heading/headingH2";
 import FlexBox from "../../atoms/Boxes/FlexBox/FlexBox";
 import ComponentSectionTwo from "../../organisms/ComponentSectionTwo/ComponentSectionTwo";
+import BeforeSectionLineWithSquare from "../../molecules/BeforeSectionLineWithSquare/BeforeSectionLineWithSquare";
 
 const Wrapper = styled.section`
   display: flex;
@@ -30,7 +31,7 @@ const WrapperText = styled.div`
 `;
 
 const SectionTwo = () => (
-  <Wrapper>
+  <Wrapper id="sectionTwo" className="constentSection_handlerMenu">
     <WrapperText>
       <FlexBox>
         <H2 SectionTitle subText>
@@ -46,6 +47,7 @@ const SectionTwo = () => (
       </FlexBox>
       <ComponentSectionTwo />
     </WrapperText>
+    <BeforeSectionLineWithSquare NumberInSquare="3" />
   </Wrapper>
 );
 
