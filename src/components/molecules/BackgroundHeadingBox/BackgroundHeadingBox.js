@@ -5,6 +5,7 @@ import headerBackground from "../../../assets/background/headerBackground.png";
 import H1 from "../../atoms/Heading/headingH1";
 import H2 from "../../atoms/Heading/headingH2";
 import ShareIcon from "../ShareIcon/ShareIcon";
+import Modal from "../../atoms/Modal/Modal";
 
 const BackgroundBox = styled.div`
   width: 100%;
@@ -35,13 +36,30 @@ const BackgroundBox = styled.div`
   }
 `;
 
-const BackgroundHeadingBox = () => (
-  <BackgroundBox>
-    <H1>Your text</H1>
-    <H2>for better understanding</H2>
-    <PlayVideoButton />
-    <ShareIcon />
-  </BackgroundBox>
-);
+class BackgroundHeadingBox extends React.Component {
+  state = {
+    show: false,
+  };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
+
+  render() {
+    return (
+      <BackgroundBox>
+        <H1>Your text</H1>
+        <H2>for better understanding</H2>
+        <Modal show={this.state.show} handleClose={this.hideModal} />
+        <PlayVideoButton handleOpenMoadl={this.showModal} />
+        <ShareIcon />
+      </BackgroundBox>
+    );
+  }
+}
 
 export default BackgroundHeadingBox;

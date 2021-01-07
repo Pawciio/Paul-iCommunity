@@ -3,12 +3,13 @@ import styled from "styled-components";
 import Paragraph from "../Paragraph/Paragraph";
 import PlayerButton from "../../../assets/background/PlayerButton.png";
 
-const Wrapper = styled.div`
+const Wrapper = styled.button`
   display: flex;
   align-items: center;
   margin: 35px;
   padding: 10px;
   background: #ff5c38;
+  cursor: pointer;
 
   .buttonPlayer {
     position: relative;
@@ -59,8 +60,8 @@ const TextContainer = styled.div`
   }
 `;
 
-const PlayVideoButton = () => (
-  <Wrapper>
+const PlayVideoButton = ({ handleOpenMoadl }) => (
+  <Wrapper onClick={handleOpenMoadl}>
     <TextContainer>
       <Paragraph className="buttonText">Click here to play</Paragraph>
     </TextContainer>
