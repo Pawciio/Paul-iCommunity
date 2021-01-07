@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 const Wrapper = styled.div`
+  z-index: 999;
+
   .modal {
     position: fixed;
     top: 0;
@@ -30,17 +33,20 @@ const Wrapper = styled.div`
   }
 `;
 
-const Modal = ({ handleClose, show, children }) => {
+const Modal = ({ handleClose, show }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   return (
     <Wrapper>
-      <div className={showHideClassName}>
+      <div className={showHideClassName} onClick={handleClose}>
         <section className="modal-main">
-          <h1>hello moadl</h1>
-          <button type="button" onClick={handleClose}>
-            Close
-          </button>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+            controls={true}
+            height={"80vh"}
+            width={"100%"}
+            playing={show === true ? true : false}
+          />
         </section>
       </div>
     </Wrapper>

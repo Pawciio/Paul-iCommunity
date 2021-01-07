@@ -10,6 +10,7 @@ const Wrapper = styled.button`
   padding: 10px;
   background: #ff5c38;
   cursor: pointer;
+  border: none;
 
   .buttonPlayer {
     position: relative;

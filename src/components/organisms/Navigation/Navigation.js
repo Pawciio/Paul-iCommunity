@@ -28,6 +28,7 @@ const MenuImage = styled.div`
   height: 50px;
   margin: 30px;
   opacity: 0.5;
+  border: 1px;
   cursor: pointer;
 
   &:hover {

@@ -62,6 +62,7 @@ const WrapperElementBox = styled.div`
     background-color: ${({ theme }) => theme.PaddingOrange};
     width: 100%;
     height: 100%;
+    left: 0;
   }
 
   .popup::after {
@@ -73,6 +74,7 @@ const WrapperElementBox = styled.div`
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+    left: 0;
   }
 `;
 
