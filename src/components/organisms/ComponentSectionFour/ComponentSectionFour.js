@@ -29,6 +29,9 @@ const WrapperBoxes = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 
+  @media all and (max-width: 1320px) {
+    max-width: 900px;
+  }
   @media all and (max-width: 950px) {
     p,
     span {

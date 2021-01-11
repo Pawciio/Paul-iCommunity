@@ -22,6 +22,7 @@ const Wrapper = styled.div`
   }
 
   @media all and (max-width: 1320px) {
+    max-width: 900px;
     justify-content: center;
     .longLineVertical {
       top: 0;
@@ -47,7 +48,7 @@ const WrapperElementBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 420px;
+  width: 420px;
   margin: 10px;
   position: relative;
 
@@ -56,6 +57,7 @@ const WrapperElementBox = styled.div`
     bottom: -26px;
     z-index: -1;
   }
+
   .lineHorizontal {
     transform: rotate(90deg);
   }
@@ -69,6 +71,12 @@ const WrapperElementBox = styled.div`
     font-family: Spectral;
     font-style: italic;
     text-align: center;
+  }
+
+  @media all and (max-width: 1320px) {
+    .lineVertical {
+      height: 90px;
+    }
   }
 `;
 

@@ -14,6 +14,7 @@ const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.OrangeColor};
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 
   .footerBackground {
     position: absolute;
