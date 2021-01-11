@@ -19,6 +19,7 @@ const BackgroundBox = styled.div`
   align-items: center;
 
   @media all and (max-width: 950px) {
+    height: 500px;
     h1 {
       font-size: 5em;
     }
@@ -27,6 +28,7 @@ const BackgroundBox = styled.div`
     }
   }
   @media all and (max-width: 575px) {
+    height: 415px;
     h1 {
       font-size: 2.5em;
     }

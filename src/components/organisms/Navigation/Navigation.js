@@ -32,7 +32,14 @@ const MenuImage = styled.div`
   cursor: pointer;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+
+  @media all and (max-width: 455px) {
+    margin: 20px 5px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
   }
 `;
 

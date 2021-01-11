@@ -19,7 +19,7 @@ const Wrapper = styled.button`
   .buttonPlayer::before {
     content: "";
     width: 2px;
-    height: 73px;
+    height: 71px;
     left: -15px;
     top: -10px;
     background: whitesmoke;
@@ -31,10 +31,8 @@ const Wrapper = styled.button`
       width: 27px;
     }
     .buttonPlayer::before {
-      height: 57px;
+      height: 55px;
     }
-  }
-  @media all and (max-width: 575px) {
   }
 `;
 
