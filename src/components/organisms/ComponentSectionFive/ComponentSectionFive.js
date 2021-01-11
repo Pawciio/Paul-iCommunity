@@ -22,7 +22,6 @@ const Wrapper = styled.div`
   }
 
   @media all and (max-width: 1320px) {
-    max-width: 900px;
     justify-content: center;
     .longLineVertical {
       top: 0;
@@ -41,6 +40,15 @@ const Wrapper = styled.div`
     span {
       font-size: 14px;
     }
+  }
+`;
+
+const WrapperGroupElement = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media all and (max-width: 1320px) {
+    max-width: 900px;
   }
 `;
 
@@ -114,34 +122,36 @@ const ComponentSectionFive = () => {
 
   return (
     <Wrapper className="wrapper">
-      {state.ElementsSectionFive.map((item) => (
-        <WrapperElementBox
-          className={item.longLine ? "longLineVertical" : null}
-        >
-          <AddImage
-            className="lineVertical"
-            icons={Line}
-            width="4px"
-            height={item.longLine ? "180px" : "90px"}
-          />
-          <AddImage
-            icons={item.images}
-            width="320px"
-            height="320px"
-            margin="25px 0"
-          />
-          <ParagraphHeading title OrangeParagraph>
-            {item.title}
-          </ParagraphHeading>
-          <AddImage
-            className="lineHorizontal"
-            icons={Line}
-            width="4px"
-            height="70px"
-          />
-          <Paragraph className="contentText">{item.content}</Paragraph>
-        </WrapperElementBox>
-      ))}
+      <WrapperGroupElement>
+        {state.ElementsSectionFive.map((item) => (
+          <WrapperElementBox
+            className={item.longLine ? "longLineVertical" : null}
+          >
+            <AddImage
+              className="lineVertical"
+              icons={Line}
+              width="4px"
+              height={item.longLine ? "180px" : "90px"}
+            />
+            <AddImage
+              icons={item.images}
+              width="320px"
+              height="320px"
+              margin="25px 0"
+            />
+            <ParagraphHeading title OrangeParagraph>
+              {item.title}
+            </ParagraphHeading>
+            <AddImage
+              className="lineHorizontal"
+              icons={Line}
+              width="4px"
+              height="70px"
+            />
+            <Paragraph className="contentText">{item.content}</Paragraph>
+          </WrapperElementBox>
+        ))}
+      </WrapperGroupElement>
       {size.width > 1320 ? <Footer /> : <FooterInMedia />}
     </Wrapper>
   );
